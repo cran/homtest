@@ -16,25 +16,18 @@
  nonparboot (z,n=length(z))
 }
 %- maybe also `usage' for other objects documented here.
-\arguments{
- .
-}
+%\arguments{}
 \details{
- ksampleA2 provides the Anderson-Darling test statistic;
- nonparboot provides a non-parametric bootstrap.
-
+ \code{ksampleA2} provides the Anderson-Darling test statistic;
+ \code{nonparboot} provides a non-parametric bootstrap.
 }
-\value{
- .
-}
+%\value{}
 
 \author{Alberto Viglione, e-mail: \email{alviglio@tiscali.it}.}
 
-\note{.}
+%\note{.}
 
 \seealso{\code{\link{factor}}, \code{\link{HOMTESTS}}, \code{\link{Lmoments}}}
 
-\examples{
-
-}
+%\examples{}
 \keyword{internal}

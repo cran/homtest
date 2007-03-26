@@ -6,14 +6,14 @@
 %- Also NEED an `\alias' for EACH other topic documented here.
 \title{Data-sample}
 \description{
-...
+ Total annual flow, expressed in mm, of 47 stations in Piemonte (Italy).
 }
 \usage{
  annualflows
 }
 \format{Data.frame containing annual flow data of 47 stations.}
-\source{}
-\references{}
+%\source{}
+%\references{}
 \examples{
 data(annualflows)
 annualflows
