@@ -28,7 +28,8 @@ HW.tests <- function(x,cod,Nsim=500) {
   tau4Reg <- as.numeric(rLm[5])
 
   V1 <- (sum(ni*(ti-tauReg)^2)/sum(ni))^0.5
-  V2 <- (sum(ni * ((ti - tauReg)^2 + (t3i - tau3Reg)^2))/sum(ni))^0.5
+  #V2 <- (sum(ni * ((ti - tauReg)^2 + (t3i - tau3Reg)^2))/sum(ni))^0.5
+  V2 <- sum(ni * ((ti - tauReg)^2 + (t3i - tau3Reg)^2)^0.5)/sum(ni)
 
   parkappa <- par.kappa(lambda1Reg,lambda2Reg,tau3Reg,tau4Reg)
 
@@ -52,7 +53,8 @@ HW.tests <- function(x,cod,Nsim=500) {
     tauReg.sim <- sum(ni*ti.sim)/sum(ni)
     tau3Reg.sim <- sum(ni*t3i.sim)/sum(ni)
     V1s[i] <- (sum(ni*(ti.sim-tauReg.sim)^2)/sum(ni))^0.5
-    V2s[i] <- (sum(ni * ((ti.sim - tauReg.sim)^2 + (t3i.sim - tau3Reg.sim)^2))/sum(ni))^0.5
+    #V2s[i] <- (sum(ni * ((ti.sim - tauReg.sim)^2 + (t3i.sim - tau3Reg.sim)^2))/sum(ni))^0.5
+    V2s[i] <- sum(ni * ((ti.sim - tauReg.sim)^2 + (t3i.sim - tau3Reg.sim)^2)^0.5)/sum(ni)
   }
 
   muV1 <- mean(V1s)
