@@ -96,6 +96,5 @@ the quantile function \eqn{x}, \code{Lmom.GEV} gives the L-moments (\eqn{\lambda
 
 \seealso{\code{\link{rnorm}}, \code{\link{runif}}, \code{\link{KAPPA}}, \code{\link{Lmoments}}.}
 
-\examples{
-}
+%\examples{}
 \keyword{distribution}

@@ -79,6 +79,5 @@ the quantile function \eqn{x}, \code{Lmom.gumb} gives the L-moments (\eqn{\lambd
 
 \seealso{\code{\link{rnorm}}, \code{\link{runif}}, \code{\link{GEV}}, \code{\link{Lmoments}}.}
 
-\examples{
-}
+%\examples{}
 \keyword{distribution}
